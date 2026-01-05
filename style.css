@@ -16,21 +16,22 @@ header {
     margin-bottom: 2rem;
 }
 
-header h1,
-header p {
+header h1 {
     margin-left: 0;
     font-weight: 600;
-    color: #1f5e4a; /* same green everywhere */
-}
-
-header h1 {
+    color: #1f5e4a;
     font-size: 2rem;
     margin-bottom: 0.25rem;
 }
 
 header p {
+    margin-left: 0;
+    font-family: "Playfair Display", "Georgia", serif;
+    font-weight: 500;
     font-size: 1.1rem;
+    color: #f2a1c6; /* light pink */
 }
+
 
 
 /* Content sections */
