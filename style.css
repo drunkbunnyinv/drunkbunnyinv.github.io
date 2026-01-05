@@ -78,13 +78,16 @@ iframe {
     font-family: "Playfair Display", serif;
     color: #1f5e4a;
     margin-top: 0;
+    margin-bottom: 0.15rem; /* tightened so the tagline sits closer */
 }
 
 /* Medieval tagline */
 .invention-card .tagline {
     font-style: italic;
-    color: #7a4a62; /* muted rose */
-    margin-top: -0.25rem;
+    color: #666; /* slightly muted for underheader look */
+    margin-top: 0;   /* remove gap above the tagline */
+    margin-bottom: 0.6rem; /* keep some breathing room below */
+    font-size: 0.95rem;
 }
 
 /* Link */
