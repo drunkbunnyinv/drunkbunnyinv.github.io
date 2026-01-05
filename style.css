@@ -65,6 +65,39 @@ iframe {
     border-radius: 6px;
 }
 
+/* Invention-specific card */
+.invention-card {
+    background-color: #fdf7f2; /* parchment-like */
+    border: 1px solid #1f5e4a;
+}
+
+/* Title */
+.invention-card h3 {
+    font-family: "Playfair Display", serif;
+    color: #1f5e4a;
+    margin-top: 0;
+}
+
+/* Medieval tagline */
+.invention-card .tagline {
+    font-style: italic;
+    color: #7a4a62; /* muted rose */
+    margin-top: -0.25rem;
+}
+
+/* Link */
+.invention-link {
+    display: inline-block;
+    margin-top: 0.75rem;
+    font-weight: 600;
+    color: #1f5e4a;
+    text-decoration: none;
+}
+
+.invention-link:hover {
+    text-decoration: underline;
+}
+
 /* Mobile responsiveness */
 @media (max-width: 600px) {
     header h1 { font-size: 1.6rem; }
