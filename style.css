@@ -131,6 +131,14 @@ iframe {
     text-decoration: underline;
 }
 
+.email {
+    white-space: nowrap; /* keeps emoji + email together */
+}
+
+.emoji {
+    margin-right: 0.3rem; /* space between emoji and email */
+}
+
 /* Mobile responsiveness */
 @media (max-width: 600px) {
     header h1 { font-size: 1.6rem; }
