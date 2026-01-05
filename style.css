@@ -41,6 +41,34 @@ section {
     margin-bottom: 2rem;
 }
 
+.contact-card {
+    display: inline-block;
+    background-color: #ffe6f0; /* light pink */
+    border: 2px solid #1f5e4a; /* forest green */
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.contact-email {
+    font-family: "Playfair Display", serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #1f5e4a; /* green text */
+    margin: 0;
+}
+
+.contact-email a {
+    color: #1f5e4a; /* keep link green */
+    text-decoration: none;
+    font-weight: 600; /* optional: emphasize email */
+}
+
+.contact-email a:hover {
+    text-decoration: underline;
+}
+
 /* Card for form */
 .card {
     background-color: #ffe6f0; /* soft pink */
