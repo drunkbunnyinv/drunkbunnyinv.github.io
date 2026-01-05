@@ -32,7 +32,9 @@ header p {
     color: #f2a1c6; /* light pink */
 }
 
-
+.accent-line {
+    color: #f2a1c6; /* light pink */
+}
 
 /* Content sections */
 section {
