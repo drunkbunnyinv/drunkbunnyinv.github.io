@@ -11,27 +11,27 @@ body {
 
 /* Header */
 header {
-    border-left: 4px solid #0b3d2e; /* deep forest green accent */
+    border-left: 4px solid #1f5e4a;
     padding-left: 0.5rem;
     margin-bottom: 2rem;
 }
 
-/* Align header with body content */
-header h1, header p {
+header h1,
+header p {
     margin-left: 0;
     font-weight: 600;
+    color: #1f5e4a; /* same green everywhere */
 }
 
 header h1 {
     font-size: 2rem;
-    color: #0b3d2e; /* deep forest green title */
     margin-bottom: 0.25rem;
 }
 
 header p {
     font-size: 1.1rem;
-    color: #555;
 }
+
 
 /* Content sections */
 section {
