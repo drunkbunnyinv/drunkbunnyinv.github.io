@@ -1,0 +1,160 @@
+/* Page background */
+.ck-page {
+    background-color: #f6f3ef;
+    font-family: "Georgia", "Garamond", serif;
+    color: #1f3d2b;
+}
+
+/* Layout container */
+.ck-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 3rem;
+}
+
+/* Header */
+.ck-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.ck-header h1 {
+    font-size: 2.6rem;
+    color: #1f5e4a; /* forest green */
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.03em;
+}
+
+.ck-subtitle {
+    font-size: 1.15rem;
+    color: #b45a86; /* soft pink */
+    font-style: italic;
+}
+
+/* Demo image gallery */
+.ck-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.ck-gallery img {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #e0c6d6;
+    background-color: #fdf0f7;
+}
+
+.ck-gallery figure {
+    margin: 0;
+}
+
+.ck-gallery figcaption {
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+    color: #b45a86; /* soft pink */
+    text-align: center;
+}
+
+.ck-lightbox {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(31, 61, 43, 0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+.ck-lightbox img {
+    max-width: 90%;
+    max-height: 70vh;
+    border-radius: 8px;
+    border: 2px solid #e0c6d6;
+    background: #fff;
+}
+
+.ck-lightbox p {
+    margin-top: 1rem;
+    color: #ffe6f0;
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 600px;
+}
+
+.ck-lightbox:target {
+    display: flex;
+}
+
+.ck-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #ffe6f0;
+}
+
+
+/* Card styling */
+.ck-card {
+    background-color: #fffafc;
+    border: 2px solid #1f5e4a;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.ck-card h2 {
+    margin-top: 0;
+    color: #1f5e4a;
+    font-size: 1.4rem;
+}
+
+.ck-muted {
+    color: #6b6b6b;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+
+.ck-features {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.5rem 0 0;
+}
+
+.ck-features li {
+    padding: 0.5rem 0;
+    font-size: 1.05rem;
+    border-bottom: 1px solid #e7d2de;
+}
+
+.ck-features li:last-child {
+    border-bottom: none;
+}
+
+
+/* Back link */
+.ck-back {
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.ck-back-link {
+    text-decoration: none;
+    font-weight: 600;
+    color: #1f5e4a;
+}
+
+.ck-back-link:hover {
+    text-decoration: underline;
+}
