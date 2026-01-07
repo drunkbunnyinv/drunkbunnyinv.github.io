@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cabin Kingdom</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Main site CSS if you want shared styles -->
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <!-- Cabin Kingdom specific styling -->
+  <link rel="stylesheet" href="./cabin-kingdom.css" />
+</head>
+
+<body class="ck-page">
+
+  <main class="ck-container">
+
+    <header class="ck-header">
+      <h1>Cabin Kingdom</h1>
+      <p class="ck-subtitle">
+        simplify your castles
+      </p>
+    </header>
+    
+    <section class="ck-card">
+      <h2>Key Value of the Invention</h2>
+      <p>
+        Rural hosts have another operation to tend to other than 
+        their short-term rentals. They are <b>ranchers, farmers, homesteaders,
+        and the like.</b> When deciding today's tasks, they 
+        do not need an overcomplicated system.
+        <br>
+        <br>
+        Cabin Kingdom solves one simple question:
+        <br>
+        <b>What's going on today?</b>
+      </p>
+    </section>
+
+    <section class="ck-card">
+      <h2>Pain Points</h2>
+      <p>
+        <b>Which cabins do you have available this weekend?</b>
+        <br>
+        <br>
+        Rural hosts get stuck in a cycle of: 
+        <br>
+        receive a last minute guest phone call → leave the field → get to a computer →
+        figure out what cabins are open → call the 
+        guest back and waste time talking them through the available options → go 
+        back to the field → aaand receive another phone call from a guest!
+        <br>
+        <br>
+        When it is possible to instead...
+        <br>
+        receive a phone call → send the guest a comprehensive link!
+        <br>
+        <br>
+        <br>
+        <b>Which cabins need to be cleaned today?</b>
+        <br>
+        Rural hosts often hire temporary workers. 
+      </p>
+    </section>
+
+    <section class="ck-card">
+      <h2>Demo Images</h2>
+      <p class="ck-muted">
+        Early design experiments and interface concepts.
+      </p>
+
+      <div class="ck-gallery">
+      <figure>
+        <a href="#img1">
+          <img src="/images/cabin-demo-1.png" alt="Cabin Kingdom dashboard">
+        </a>
+        <figcaption>Cabin Kingdom dashboard overview</figcaption>
+      </figure>
+    
+      <figure>
+        <a href="#img2">
+          <img src="/images/cabin-demo-2.png" alt="Booking calendar">
+        </a>
+        <figcaption>Medieval-inspired booking calendar</figcaption>
+      </figure>
+    
+      <figure>
+        <a href="#img3">
+          <img src="/images/cabin-demo-3.png" alt="UI concept">
+        </a>
+        <figcaption>Whimsical UI concept exploration</figcaption>
+      </figure>
+    </div>
+    </section>
+
+    <div id="img1" class="ck-lightbox">
+      <a href="#" class="ck-close">×</a>
+      <img src="/images/cabin-demo-1.png" alt="">
+      <p>Cabin Kingdom dashboard overview</p>
+    </div>
+    
+    <div id="img2" class="ck-lightbox">
+      <a href="#" class="ck-close">×</a>
+      <img src="/images/cabin-demo-2.png" alt="">
+      <p>Medieval-inspired booking calendar</p>
+    </div>
+    
+    <div id="img3" class="ck-lightbox">
+      <a href="#" class="ck-close">×</a>
+      <img src="/images/cabin-demo-3.png" alt="">
+      <p>Whimsical UI concept exploration</p>
+    </div>
+
+    
+    <section class="ck-card">
+      <h2>Coming Features</h2>
+      <ul class="ck-features">
+        <li>🏰 Medieval-themed booking dashboards</li>
+        <li>📜 Role-based access for hosts and staff</li>
+        <li>🗓 Visual availability calendars</li>
+        <li>🕯 Custom rules for minimum stays and pricing</li>
+        <li>🧙 Whimsical UI modes without sacrificing usability</li>
+      </ul>
+    </section>
+
+
+    <section class="ck-card ck-back">
+      <a href="/" class="ck-back-link">← Back to Drunk Bunny Invents</a>
+    </section>
+
+  </main>
+
+</body>
+</html>
