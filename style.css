@@ -112,7 +112,7 @@ iframe {
 /* Medieval tagline */
 .invention-card .tagline {
     font-style: italic;
-    color: #666; /* slightly muted for underheader look */
+    color: #b45a86; /* soft pink */
     margin-top: 0;   /* remove gap above the tagline */
     margin-bottom: 0.6rem; /* keep some breathing room below */
     font-size: 0.95rem;
