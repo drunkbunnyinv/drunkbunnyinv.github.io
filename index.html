@@ -60,17 +60,33 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function() {
-        // Wait a tick for GitHub Calendar to inject elements
+        // Wait for GitHub Calendar to fully render
         setTimeout(() => {
-          // Remove "Skip to contributions year list"
-          document.querySelectorAll('h2.f4.text-normal.mb-3').forEach(el => el.remove());
+          // Remove ALL h2 elements (including "Skip to contributions year list" and "Contribution Graph")
+          document.querySelectorAll('#github-activity h2').forEach(el => el.remove());
+          
+          // Remove any anchor links with "Skip to contributions"
+          document.querySelectorAll('#github-activity a').forEach(el => {
+            if (el.textContent.includes('Skip to contributions') || 
+                el.textContent.includes('Learn how we count contributions')) {
+              el.remove();
+            }
+          });
     
-          // Remove "Learn how we count contributions"
-          document.querySelectorAll('#user-activity-overview, .calendar .width-full > .float-left').forEach(el => el.remove());
-    
-          // Remove the footer stats
-          document.querySelectorAll('.contrib-column, .contrib-number, .text-small, .contrib-legend, .contrib-footer').forEach(el => el.remove());
-        }, 50);
+          // Remove the footer and stats elements
+          document.querySelectorAll('.contrib-column, .contrib-number, .text-small, .contrib-legend, .contrib-footer, #user-activity-overview, .calendar .width-full > .float-left').forEach(el => el.remove());
+          
+          // Aggressive cleanup - search through ALL elements in the calendar
+          document.querySelectorAll('#github-activity *').forEach(el => {
+            const text = el.textContent.trim();
+            if (text === 'Learn how we count contributions' || 
+                text === 'Skip to contributions year list' ||
+                text === 'Contribution Graph' ||
+                text.includes('Skip to contributions')) {
+              el.remove();
+            }
+          });
+        }, 500);
       });
     </script>
 
