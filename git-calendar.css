@@ -1,243 +1,44 @@
-/* =========================== */
-/* GitHub Calendar Wrapper CSS */
-/* =========================== */
+/* Basic GitHub Calendar Styling */
+
 .github-calendar-wrapper {
   width: 100%;
-  font-family: system-ui, sans-serif;
-}
-
-/* ---------------------------- */
-/* Base Calendar Graph Colors */
-:root {
-  --color-calendar-graph-day-bg: #dddbdb;
-  --color-calendar-graph-day-L1-bg: #39dd34;
-  --color-calendar-graph-day-L2-bg: #45a045;
-  --color-calendar-graph-day-L3-bg: #047526;
-  --color-calendar-graph-day-L4-bg: #0a4208;
-}
-
-.github-calendar-wrapper .ContributionCalendar-day[data-level='0'] {
-  background-color: var(--color-calendar-graph-day-bg);
-}
-.github-calendar-wrapper .ContributionCalendar-day[data-level='1'] {
-  background-color: var(--color-calendar-graph-day-L1-bg);
-}
-.github-calendar-wrapper .ContributionCalendar-day[data-level='2'] {
-  background-color: var(--color-calendar-graph-day-L2-bg);
-}
-.github-calendar-wrapper .ContributionCalendar-day[data-level='3'] {
-  background-color: var(--color-calendar-graph-day-L3-bg);
-}
-.github-calendar-wrapper .ContributionCalendar-day[data-level='4'] {
-  background-color: var(--color-calendar-graph-day-L4-bg);
-}
-
-/* Grid styling */
-.github-calendar-wrapper table.ContributionCalendar-grid {
-  margin-bottom: 0pt;
-}
-.github-calendar-wrapper table.ContributionCalendar-grid td {
-  padding: 4pt;
-}
-.github-calendar-wrapper table.ContributionCalendar-grid td span.sr-only {
-  display: none;
-}
-.github-calendar-wrapper td.ContributionCalendar-label span[aria-hidden='true'] {
-  font-size: 8pt;
-  left: -1pt;
-}
-.github-calendar-wrapper tool-tip {
-  display: none;
-}
-
-/* Hide unwanted elements */
-.github-calendar-wrapper .calendar .width-full > .float-left,
-.github-calendar-wrapper a.skip-link,
-.github-calendar-wrapper .calendar-footer,
-.github-calendar-wrapper .contrib-summary,
-.github-calendar-wrapper #user-activity-overview,
-.github-calendar-wrapper h2.f4.text-normal.mb-3 {
-  display: none !important;
-}
-
-/* Calendar container */
-.github-calendar-wrapper .calendar {
-  font-family: Helvetica, arial;
-  border: 1px solid #DDDDDD;
-  border-radius: 3px;
-  min-height: 243px;
-  text-align: center;
+  max-width: 800px;
   margin: 0 auto;
-}
-
-/* Graph labels */
-.github-calendar-wrapper .calendar-graph text.wday,
-.github-calendar-wrapper .calendar-graph text.month {
-  font-size: 10px;
-  fill: #aaa;
+  font-family: "Segoe UI", Roboto, sans-serif;
 }
 
 /* Contribution squares */
-.github-calendar-wrapper .calendar-graph rect {
-  stroke: #fff;
+.github-calendar-wrapper svg rect {
+  stroke: #fff;       /* white border between squares */
   stroke-width: 1px;
-  rx: 2px;
+  rx: 2px;            /* rounded corners */
 }
 
-/* Hover effect on squares */
-.github-calendar-wrapper .calendar-graph rect:hover {
-  stroke: #b45a86; /* pink accent */
-  stroke-width: 1.5px;
-}
-
-/* Weekday labels shift left and right-align */
-.github-calendar-wrapper .graph text.day {
-  text-anchor: end;
-  transform: translateX(-12px);
-  fill: #1f5e4a; /* green branding */
+/* Weekday labels */
+.github-calendar-wrapper svg text.day {
+  text-anchor: end;       /* right-align in SVG */
+  transform: translateX(-10px);  /* shift left a bit */
+  fill: #1f5e4a;         /* dark green */
   font-size: 10px;
   font-weight: 500;
 }
 
-/* Month labels pink accents */
-.github-calendar-wrapper .graph .month {
-  fill: #b45a86; /* soft pink */
+/* Month labels */
+.github-calendar-wrapper svg text.month {
+  fill: #b45a86;         /* soft pink accent */
   font-size: 10px;
   font-weight: 500;
 }
 
-/* Misc styling */
-.github-calendar-wrapper .px-md-5 {
-  height: 2rem;
-}
-.github-calendar-wrapper .float-right {
-  text-align: right;
-  padding: 0 14px 10px 0;
-  display: inline-block;
-  float: right;
-}
-.github-calendar-wrapper .float-right div {
-  display: inline-block;
-  list-style: none;
-  margin: 0 5px;
-  position: relative;
-  bottom: -1px;
-  padding: 0;
-}
-.github-calendar-wrapper .float-right span.sr-only {
-  display: none;
-}
-.github-calendar-wrapper .contrib-legend .legend li {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-}
-.github-calendar-wrapper .text-small {
-  font-size: 12px;
-  color: #767676;
-}
-.github-calendar-wrapper .calendar-graph {
-  padding: 5px 0 0;
-  text-align: center;
-}
-.github-calendar-wrapper .contrib-column {
-  padding: 15px 0;
-  text-align: center;
-  border-left: 1px solid #ddd;
-  border-top: 1px solid #ddd;
-  font-size: 11px;
-}
-.github-calendar-wrapper .contrib-column-first {
-  border-left: 0;
-}
-.github-calendar-wrapper .table-column {
-  box-sizing: border-box;
-  display: table-cell;
-  width: 1%;
-  padding-right: 10px;
-  padding-left: 10px;
-  vertical-align: top;
-}
-.github-calendar-wrapper .contrib-number {
-  font-weight: 300;
-  line-height: 1.3em;
-  font-size: 24px;
-  display: block;
-  color: #333;
-}
-.github-calendar-wrapper .calendar img.spinner {
-  width: 70px;
-  margin-top: 50px;
-  min-height: 70px;
-}
-.github-calendar-wrapper .monospace {
-  text-align: center;
-  color: #000;
-  font-family: monospace;
-}
-.github-calendar-wrapper .monospace a {
-  color: #1D75AB;
-  text-decoration: none;
-}
-.github-calendar-wrapper .monospace a:hover,
-.github-calendar-wrapper .left.text-muted a:hover {
-  text-decoration: underline;
-}
-.github-calendar-wrapper .contrib-footer {
-  font-size: 11px;
-  padding: 0 10px 12px;
-  text-align: left;
-  width: 100%;
-  box-sizing: border-box;
-  height: 26px;
-}
-.github-calendar-wrapper .left.text-muted {
-  float: left;
-  margin-left: 9px;
-  color: #767676;
-}
-.github-calendar-wrapper .left.text-muted a {
-  color: #4078c0;
-  text-decoration: none;
+/* Hide unwanted elements */
+.github-calendar-wrapper .contrib-summary,
+.github-calendar-wrapper .calendar-footer,
+.github-calendar-wrapper a.skip-link {
+  display: none !important;
 }
 
-/* Tooltips */
-.github-calendar-wrapper .day-tooltip {
-  white-space: nowrap;
-  position: absolute;
-  z-index: 99999;
-  padding: 10px;
-  font-size: 12px;
-  color: #959da5;
-  text-align: center;
-  background: rgba(0,0,0,.85);
-  border-radius: 3px;
-  display: none;
-  pointer-events: none;
-}
-.github-calendar-wrapper .day-tooltip strong {
-  color: #dfe2e5;
-}
-.github-calendar-wrapper .day-tooltip.is-visible {
-  display: block;
-}
-.github-calendar-wrapper .day-tooltip:after {
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  width: 5px;
-  height: 5px;
-  box-sizing: border-box;
-  margin: 0 0 0 -5px;
-  content: " ";
-  border: 5px solid transparent;
-  border-top-color: rgba(0,0,0,.85);
-}
-
-/* Responsive tweaks */
-@media screen and (max-width: 768px) {
-  .github-calendar-wrapper .table-column {
-    display: block;
-    width: 100%;
-  }
+/* Responsive SVG */
+.github-calendar-wrapper svg {
+  max-width: 100%;
+  height: auto;
 }
