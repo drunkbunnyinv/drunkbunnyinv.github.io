@@ -139,6 +139,18 @@ iframe {
     margin-right: 0.3rem; /* space between emoji and email */
 }
 
+/* Hide accessibility link and footer */
+.github-calendar-wrapper a.skip-link,
+.github-calendar-wrapper .calendar-footer,
+.github-calendar-wrapper .contrib-stats {
+  display: none !important;
+}
+
+.github-calendar-wrapper .graph text.day {
+  text-anchor: end;       /* align text to the right */
+  dx: -5px;               /* move text left */
+}
+
 /* Mobile responsiveness */
 @media (max-width: 600px) {
     header h1 { font-size: 1.6rem; }
