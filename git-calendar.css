@@ -1,0 +1,57 @@
+/* =========================== */
+/* GitHub Calendar Wrapper CSS */
+/* =========================== */
+
+/* Scope everything inside the wrapper */
+.github-calendar-wrapper {
+  width: 100%;
+  font-family: system-ui, sans-serif;
+}
+
+/* Hide accessibility link, footer, and contribution stats */
+.github-calendar-wrapper a.skip-link,
+.github-calendar-wrapper .calendar-footer,
+.github-calendar-wrapper .contrib-summary {
+  display: none !important;
+}
+
+/* Weekday labels (Mon, Wed, Fri) — move left to avoid overlapping squares */
+.github-calendar-wrapper .graph text.day {
+  text-anchor: end;               /* right-align inside SVG box */
+  transform: translateX(-12px);   /* move text left; tweak if needed */
+  fill: #1f5e4a;                  /* dark green for your branding */
+  font-size: 10px;
+  font-weight: 500;
+}
+
+/* Month labels */
+.github-calendar-wrapper .graph .month {
+  fill: #b45a86; /* soft pink to match card accents */
+  font-size: 10px;
+  font-weight: 500;
+}
+
+/* Contribution squares — subtle outline to pop on pink card */
+.github-calendar-wrapper .graph rect {
+  stroke: #fff;     /* white border */
+  stroke-width: 1px;
+  rx: 2px;          /* rounded corners for softer look */
+}
+
+/* Optional: slight hover effect on squares */
+.github-calendar-wrapper .graph rect:hover {
+  stroke: #b45a86;   /* highlight border in soft pink */
+  stroke-width: 1.5px;
+}
+
+/* Responsive SVG */
+.github-calendar-wrapper svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optional spacing tweak for the calendar container */
+.github-calendar-wrapper .calendar {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
