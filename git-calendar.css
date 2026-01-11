@@ -223,18 +223,25 @@ text.ContributionCalendar-label {
     font-size: 11px;
 }
 
-/* Hide "Skip to contributions year list" */
+/* "Skip to contributions year list" and hidden links */
 h2.f4.text-normal.mb-3,
-#user-activity-overview {
+#user-activity-overview,
+tool-tip,
+.calendar .width-full > .float-left,
+text.sr-only {
     display: none !important;
 }
 
-/* Hide "Learn how we count contributions" link */
+/* "Learn how we count contributions" at the bottom */
 .contrib-footer {
     display: none !important;
 }
 
-/* Hide the stats at the bottom */
+/* Keep some space at the bottom */
+.calendar-graph {
+    padding-bottom: 20px !important;
+}
+
 .contrib-column,
 .contrib-number,
 .text-small,
@@ -242,9 +249,17 @@ h2.f4.text-normal.mb-3,
     display: none !important;
 }
 
-/* Optional: remove extra spacing left behind */
-.calendar-graph {
-    padding-bottom: 0 !important;
+.calendar-graph text.wday {
+    text-anchor: end; /* right-align text */
+    x: -5; /* move left outside the calendar squares */
+    font-size: 10px;
+    fill: #aaa;
+}
+
+/* Month labels stay as they are */
+.calendar-graph text.month {
+    font-size: 10px;
+    fill: #aaa;
 }
 
 @media screen and (max-width: 768px) {
