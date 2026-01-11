@@ -252,7 +252,6 @@ text.sr-only {
 .calendar-graph text.wday {
     text-anchor: end; /* right-align text */
     x: -5; /* move left outside the calendar squares */
-    font-size: 10px;
     fill: #aaa;
 }
 
