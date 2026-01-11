@@ -223,62 +223,6 @@ text.ContributionCalendar-label {
     font-size: 11px;
 }
 
-/* "Skip to contributions year list" and hidden links */
-h2.f4.text-normal.mb-3,
-#user-activity-overview,
-tool-tip,
-.calendar .width-full > .float-left,
-text.sr-only {
-    display: none !important;
-}
-
-/* "Learn how we count contributions" at the bottom */
-.contrib-footer {
-    display: none !important;
-}
-
-/* Keep some space at the bottom */
-.calendar-graph {
-    padding-bottom: 20px !important;
-}
-
-.contrib-column,
-.contrib-number,
-.text-small,
-.contrib-legend {
-    display: none !important;
-}
-
-.calendar-graph text.wday {
-    text-anchor: end; /* right-align text */
-    x: -5; /* move left outside the calendar squares */
-    fill: #aaa;
-}
-
-/* Month labels stay as they are */
-.calendar-graph text.month {
-    font-size: 10px;
-    fill: #aaa;
-}
-
-/* Hide "Skip to contributions year list" */
-h2.f4.text-normal.mb-3 {
-    display: none !important;
-}
-
-/* Hide "Learn how we count contributions" */
-#user-activity-overview,
-.calendar .width-full > .float-left {
-    display: none !important;
-}
-
-/* Hide any remaining screen-reader only text */
-span.sr-only,
-text.sr-only {
-    display: none !important;
-}
-
-
 @media screen and (max-width: 768px) {
     .table-column {
         display: block;
