@@ -261,6 +261,24 @@ text.sr-only {
     fill: #aaa;
 }
 
+/* Hide "Skip to contributions year list" */
+h2.f4.text-normal.mb-3 {
+    display: none !important;
+}
+
+/* Hide "Learn how we count contributions" */
+#user-activity-overview,
+.calendar .width-full > .float-left {
+    display: none !important;
+}
+
+/* Hide any remaining screen-reader only text */
+span.sr-only,
+text.sr-only {
+    display: none !important;
+}
+
+
 @media screen and (max-width: 768px) {
     .table-column {
         display: block;
