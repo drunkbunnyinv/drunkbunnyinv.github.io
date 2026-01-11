@@ -223,6 +223,30 @@ text.ContributionCalendar-label {
     font-size: 11px;
 }
 
+/* Hide "Skip to contributions year list" */
+h2.f4.text-normal.mb-3,
+#user-activity-overview {
+    display: none !important;
+}
+
+/* Hide "Learn how we count contributions" link */
+.contrib-footer {
+    display: none !important;
+}
+
+/* Hide the stats at the bottom */
+.contrib-column,
+.contrib-number,
+.text-small,
+.contrib-legend {
+    display: none !important;
+}
+
+/* Optional: remove extra spacing left behind */
+.calendar-graph {
+    padding-bottom: 0 !important;
+}
+
 @media screen and (max-width: 768px) {
     .table-column {
         display: block;
