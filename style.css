@@ -139,16 +139,17 @@ iframe {
     margin-right: 0.3rem; /* space between emoji and email */
 }
 
-/* Hide accessibility link and footer */
+/* Hide unnecessary accessibility link and footer */
 .github-calendar-wrapper a.skip-link,
 .github-calendar-wrapper .calendar-footer,
-.github-calendar-wrapper .contrib-stats {
+.github-calendar-wrapper .contrib-summary { 
   display: none !important;
 }
 
+/* Move weekday labels (Mon, Wed, Fri) left */
 .github-calendar-wrapper .graph text.day {
-  text-anchor: end;       /* align text to the right */
-  dx: -5px;               /* move text left */
+  text-anchor: end;               /* right-align text in its SVG box */
+  transform: translateX(-5px);   
 }
 
 /* Mobile responsiveness */
