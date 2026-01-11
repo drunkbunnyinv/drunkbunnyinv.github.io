@@ -56,6 +56,23 @@
           responsive: true
         });
     </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        // Wait a tick for GitHub Calendar to inject elements
+        setTimeout(() => {
+          // Remove "Skip to contributions year list"
+          document.querySelectorAll('h2.f4.text-normal.mb-3').forEach(el => el.remove());
+    
+          // Remove "Learn how we count contributions"
+          document.querySelectorAll('#user-activity-overview, .calendar .width-full > .float-left').forEach(el => el.remove());
+    
+          // Remove the footer stats
+          document.querySelectorAll('.contrib-column, .contrib-number, .text-small, .contrib-legend, .contrib-footer').forEach(el => el.remove());
+        }, 50);
+      });
+    </script>
+
   
 </div>
 
