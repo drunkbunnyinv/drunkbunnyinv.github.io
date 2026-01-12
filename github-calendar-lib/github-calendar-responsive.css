@@ -176,51 +176,14 @@ div.float-right span.sr-only {
 }
 
 h2.f4.text-normal.mb-3 {
-    display: none !important;
+    display: none;
 }
 
 .float-left.text-gray {
     float: left;
 }
 #user-activity-overview{
-    display: none !important;
-}
-
-/* Hide "Learn how we count contributions" link */
-.float-left a[href*="articles/why-are-my-contributions-not-showing"],
-.float-left a[href*="count-contributions"],
-a[href*="count-contributions"] {
-    display: none !important;
-}
-
-/* Hide "Skip to contributions year list" link */
-a.sr-only,
-a.f6,
-a[href*="#js-contribution-activity"] {
-    display: none !important;
-}
-
-/* Hide any parent containers of the link */
-.float-left:has(a[href*="count-contributions"]) {
-    display: none !important;
-}
-
-/* Hide "Skip to contributions year list" and "Contribution Graph" headings */
-h2:has-text("Skip to contributions"),
-h2:has-text("Contribution Graph") {
-    display: none !important;
-}
-
-/* Additional generic hiding for common GitHub calendar elements */
-.js-year-link,
-.js-calendar-graph-svg {
-    margin-top: 0 !important;
-}
-
-/* Hide any heading that might contain the unwanted text */
-#github-activity h2,
-#github-activity h3 {
-    display: none !important;
+    display:none;
 }
 
 .day-tooltip {
@@ -265,48 +228,4 @@ text.ContributionCalendar-label {
         display: block;
         width: 100%;
     }
-    
-    /* Make calendar scrollable on mobile with visible scrolling */
-    .github-calendar-wrapper {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        padding-bottom: 10px;
-    }
-    
-    .calendar {
-        min-width: 100%;
-        overflow-x: auto;
-    }
-    
-    /* Make the contribution grid scale better on mobile */
-    .calendar-graph {
-        transform-origin: top left;
-    }
-    
-    /* Show a scroll indicator */
-    .github-calendar-wrapper::after {
-        content: "← Scroll to see full year →";
-        display: block;
-        text-align: center;
-        font-size: 11px;
-        color: #999;
-        padding: 8px 0;
-        font-style: italic;
-    }
-    
-    /* Reduce cell padding on mobile for better fit */
-    table.ContributionCalendar-grid td {
-        padding: 2pt;
-    }
-    
-    /* Make month labels smaller on mobile */
-    .calendar-graph text.wday,
-    .calendar-graph text.month {
-        font-size: 8px;
-    }
-    
-    td.ContributionCalendar-label span[aria-hidden='true'] {
-        font-size: 7pt;
-    }
 }
-

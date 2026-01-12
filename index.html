@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <title>Drunk Bunny Invents</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"> -->
-    <link rel="stylesheet" href="git-calendar.css">
+    <link rel="stylesheet" href="github-calendar-lib/github-calendar.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -43,51 +42,19 @@
         <iframe src="https://tally.so/embed/1AdJBL?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1">Loading…</iframe>
     </section>
 
-    <section class="card">
-        <h2>GitHub Tracker</h2>
+    <section class="card github-tracker-card">
+        <h2>GitHub Contribution Tracker</h2>
         <div class="github-calendar-wrapper">
         <div id="github-activity"></div>
         </div>
     </section>
 
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>    
+    <script src="github-calendar-lib/github-calendar.min.js"></script>    
     <script>
         GitHubCalendar("#github-activity", "sashab255", {
           responsive: true,
             global_stats: false
         });
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        // Wait for GitHub Calendar to fully render
-        setTimeout(() => {
-          // Remove ALL h2 elements (including "Skip to contributions year list" and "Contribution Graph")
-          document.querySelectorAll('#github-activity h2').forEach(el => el.remove());
-          
-          // Remove any anchor links with "Skip to contributions"
-          document.querySelectorAll('#github-activity a').forEach(el => {
-            if (el.textContent.includes('Skip to contributions') || 
-                el.textContent.includes('Learn how we count contributions')) {
-              el.remove();
-            }
-          });
-    
-          // Remove the footer and stats elements
-          document.querySelectorAll('.contrib-column, .contrib-number, .text-small, .contrib-legend, .contrib-footer, #user-activity-overview, .calendar .width-full > .float-left').forEach(el => el.remove());
-          
-          // Aggressive cleanup - search through ALL elements in the calendar
-          document.querySelectorAll('#github-activity *').forEach(el => {
-            const text = el.textContent.trim();
-            if (text === 'Learn how we count contributions' || 
-                text === 'Skip to contributions year list' ||
-                text === 'Contribution Graph' ||
-                text.includes('Skip to contributions')) {
-              el.remove();
-            }
-          });
-        }, 500);
-      });
     </script>
 
   
